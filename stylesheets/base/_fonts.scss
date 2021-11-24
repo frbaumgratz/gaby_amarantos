@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@font-face {
+  font-family: "founders_grotesk_text";
+  src: url("/assets/fonts/FoundersGroteskRegular.woff2") format("woff2"),
+    url("/assets/fonts/FoundersGroteskRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

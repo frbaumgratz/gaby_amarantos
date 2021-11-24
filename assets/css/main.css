@@ -1,0 +1,301 @@
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/**
+ * Basic styles for links
+ */
+@font-face {
+  font-family: "founders_grotesk_text";
+  src: url("/assets/fonts/FoundersGroteskRegular.woff2") format("woff2"), url("/assets/fonts/FoundersGroteskRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: #302e31;
+  font-family: "founders_grotesk_text"; }
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 1180px;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 20px;
+  /* 3 */
+  padding-right: 20px;
+  /* 3 */
+  width: 100%;
+  /* 1 */ }
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap; }
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.btn {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #66acf9;
+  color: #cd969e; }
+
+.btn:hover {
+  text-decoration: none; }
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.card {
+  overflow: hidden;
+  box-shadow: 0px 2px 20px #999999;
+  background: #66acf9;
+  border-radius: 0.2rem;
+  width: 250px;
+  margin: 1rem;
+  transition: 250ms all ease-in-out; }
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 40px #999999; }
+
+.card-photo {
+  margin: 1rem; }
+
+.photo {
+  width: 100%; }
+
+.card-body {
+  margin: 1rem 1rem 1rem 1rem; }
+
+.card-title {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+  font-weight: bold; }
+
+.card-subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #f1cd00;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.card-description {
+  color: #302e31;
+  font-size: 0.9rem;
+  text-align: justify;
+  height: 8rem; }
+
+.card-button {
+  margin-top: 1.5rem;
+  background: transparent;
+  padding: 0;
+  color: #f1cd00; }
+
+.card-button:hover {
+  color: #f1ad00; }
+
+.card--pink {
+  background-color: #cd969e; }
+
+.card--yellow {
+  background: #f1cd00; }
+
+.card--green {
+  background-color: #4e9961; }
+
+.card-button--green {
+  color: #4e9961; }
+
+.card-button--green:hover {
+  color: #56c773; }
+
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50vw;
+  height: 50vh;
+  overflow-x: hidden; }
+
+.wrap {
+  position: relative; }
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.slide1 {
+  background-image: url("https://static.pexels.com/photos/302889/pexels-photo-302889.jpeg"); }
+
+.slide2 {
+  background-image: url("https://static.pexels.com/photos/302892/pexels-photo-302892.jpeg"); }
+
+.slide3 {
+  background-image: url("https://static.pexels.com/photos/226633/pexels-photo-226633.jpeg"); }
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff; }
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid; }
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px; }
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px; }
+
+.section1 {
+  background-color: #66acf9; }
+
+.main-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+
+.header-logo {
+  background-color: #302e31;
+  display: flex;
+  justify-content: center; }
+  .header-logo .dialogos {
+    align-self: center; }
+
+.header-content {
+  display: flex; }
+
+.header-content--left {
+  margin-right: 20px;
+  width: 300px; }
+
+.header-content--right {
+  display: flex;
+  flex-direction: column; }
+
+.header-content .preta {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fdf8e5;
+  margin-left: 20px;
+  font-size: 24px;
+  width: 100%;
+  background-color: darkred; }
+
+.header-content .msgbox {
+  align-self: flex-start;
+  margin-right: auto;
+  background-color: blueviolet; }
+
+.header-content .data {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: darkgoldenrod; }
+
+.header-content .orgulho {
+  font-size: 14px;
+  background-color: darkgreen; }
+
+.showcase img {
+  width: 100%; }
+
+.showcase p {
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 16px; }
+  .showcase p a {
+    color: #302e31; }
+
+.section2 {
+  position: relative; }
+
+.section2 p {
+  font-size: 19vh;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1; }

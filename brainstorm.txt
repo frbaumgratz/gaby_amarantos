@@ -1,0 +1,36 @@
+Jeito 1
+
+Section1
+background da página azul: +- 50% vh
+coloco o dialogos_gnt já com o background.
+dá pra inserir a showcase como imagem no html. (ou eu crio um showcase e coloco bg nele)
+showcase vai a imagem completa, o bg com a cara da gaby + os textos, tudo na img.
+abaixo da img eu insiro o texto e o link youtube.
+
+Section2
+background branco
+texto: isso é coisa de preta
+cards_carroussel: position relative no card pra ele ficar por cima do texto.
+display inline, pra poder ficar um card do lado do outro.
+
+box_programacao
+
+
+
+
+
+Jeito 2
+Section1
+header
+posso colocar um grid pra separar as cores do BG 1fr #333, 2fr azul
+no primeiro fr vai o diálogos_gnt
+nos outros 2 eu coloco o texto
+
+showcase 
+bg_img
+
+a imagem da gaby entra no html, numa div centralizada na pagina.
+
+
+
+
