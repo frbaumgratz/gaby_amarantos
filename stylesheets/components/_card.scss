@@ -7,14 +7,25 @@
 }
 
 .card {
-  overflow: hidden;
   box-shadow: 0px 2px 20px $mid-grey;
   background: $primary-color;
   border-radius: 0.2rem;
-  //   position: relative;
+  position: relative;
   width: 250px;
   margin: 1rem;
   transition: 250ms all ease-in-out;
+}
+
+.card:after {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  border-top-color: $primary-color;
+  border-left-color: $primary-color;
+  content: "";
+  top: 100%;
+  left: 10%;
 }
 
 .card:hover {
@@ -73,12 +84,27 @@
   background-color: $secondary-color;
 }
 
+.card--pink:after {
+  border-top-color: $secondary-color;
+  border-left-color: $secondary-color;
+}
+
 .card--yellow {
   background: $tertiary-color;
 }
 
+.card--yellow:after {
+  border-top-color: $tertiary-color;
+  border-left-color: $tertiary-color;
+}
+
 .card--green {
   background-color: $quaternary-color;
+}
+
+.card--green:after {
+  border-top-color: $quaternary-color;
+  border-left-color: $quaternary-color;
 }
 
 .card-button--green {
