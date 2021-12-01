@@ -102,12 +102,27 @@ body {
 .btn:hover {
   text-decoration: none; }
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.carousel-button {
   position: absolute;
-  top: 8%; }
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer; }
+
+.carousel-button img {
+  width: 12px; }
+
+.cbtnleft {
+  left: -25px; }
+
+.cbtnright {
+  right: -25px; }
+
+.card-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out; }
 
 .card {
   background: #66acf9;
@@ -323,3 +338,12 @@ body {
   text-align: center;
   margin: 0;
   line-height: 1; }
+
+.carousel-container {
+  position: absolute;
+  top: 8%; }
+
+.carousel {
+  position: relative;
+  width: 90%;
+  margin: 0 auto; }

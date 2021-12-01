@@ -1,49 +1,48 @@
-let sliderImages = document.querySelectorAll(".slide"),
-  arrowLeft = document.querySelector("#arrow-left"),
-  arrowRight = document.querySelector("#arrow-right"),
-  current = 0;
+const cards = document.getElementById("cards");
+const leftBtn = document.getElementById("left");
+const rightBtn = document.getElementById("right");
 
-// Clear all images
-function reset() {
-  for (let i = 0; i < sliderImages.length; i++) {
-    sliderImages[i].style.display = "none";
+const card = document.querySelectorAll("#cards card");
+
+console.log(card);
+
+let idx = 0;
+
+// Intervalo, caso você queira que o carousel rode automáticamente
+// let interval = setInterval(run, 2000);
+
+function run() {
+  idx++;
+
+  changeCard();
+}
+
+function changeCard() {
+  if (idx > card.length - 1) {
+    idx = 0;
+  } else if (idx < 0) {
+    idx = card.length - 1;
   }
+
+  cards.style.transform = `translateX(${-idx * 250}px)`;
 }
 
-// Init slider
-function startSlide() {
-  reset();
-  sliderImages[0].style.display = "block";
-}
+// Reset interval é só se você quiser usar o carousel automático. Ele vai mudar automático, daí quando você clicar, o tempo da mudança automática reseta!
+// function resetInterval() {
+//   clearInterval(interval);
+//   interval = setInterval(run, 2000);
+// }
 
-// Show prev
-function slideLeft() {
-  reset();
-  sliderImages[current - 1].style.display = "block";
-  current--;
-}
+rightBtn.addEventListener("click", () => {
+  idx++;
 
-// Show next
-function slideRight() {
-  reset();
-  sliderImages[current + 1].style.display = "block";
-  current++;
-}
-
-// Left arrow click
-arrowLeft.addEventListener("click", function () {
-  if (current === 0) {
-    current = sliderImages.length;
-  }
-  slideLeft();
+  changeCard();
+  //   resetInterval();
 });
 
-// Right arrow click
-arrowRight.addEventListener("click", function () {
-  if (current === sliderImages.length - 1) {
-    current = -1;
-  }
-  slideRight();
-});
+leftBtn.addEventListener("click", () => {
+  idx--;
 
-startSlide();
+  changeCard();
+  //   resetInterval();
+});

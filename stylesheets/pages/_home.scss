@@ -104,3 +104,15 @@
   margin: 0;
   line-height: 1;
 }
+
+.carousel-container {
+  position: absolute;
+  top: 8%;
+}
+// O carousel-container foi feito pra colocar o carousel por cima do "coisa de preta". Ele tá ali só pra levar as cards pro topo
+
+.carousel {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}

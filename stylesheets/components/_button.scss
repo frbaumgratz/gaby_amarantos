@@ -16,3 +16,26 @@
   // color: $dark-color;
   text-decoration: none;
 }
+
+// Carousel Button
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel-button img {
+  width: 12px;
+}
+
+.cbtnleft {
+  left: -25px;
+}
+
+.cbtnright {
+  right: -25px;
+}
