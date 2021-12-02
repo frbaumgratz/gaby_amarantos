@@ -211,22 +211,61 @@ body {
 .card-button--green:hover {
   color: #56c773; }
 
-.box-container {
-  display: flex;
-  justify-content: center;
-  width: 90%; }
+.boxes-container {
+  display: flex; }
 
 .box {
-  width: 33%; }
+  width: 300px;
+  margin-right: 35px;
+  margin-bottom: 100px; }
 
-.box-1 {
-  background: red; }
+.box--yellow {
+  border-left: 8px solid #f1cd00;
+  padding-left: 15px; }
 
-.box-2 {
-  background: green; }
+.box--brown {
+  border-left: 8px solid #94693c;
+  padding-left: 15px; }
 
-.box-3 {
-  background: blue; }
+.box--blue {
+  border-left: 8px solid #66acf9;
+  padding-left: 15px; }
+
+.box-baloon {
+  background: #302e31;
+  position: relative;
+  width: 250px;
+  height: 100px; }
+  .box-baloon p {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    color: #fdf8e5; }
+  .box-baloon h1 {
+    margin: 0;
+    color: #cd969e;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 10px; }
+
+.box-baloon:after {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  border-top-color: #302e31;
+  border-left-color: #302e31;
+  content: "";
+  top: 100%;
+  left: 10%; }
+
+.box-body {
+  width: 250px; }
+
+.box-title {
+  margin-top: 45px; }
 
 .section1 {
   background-color: #66acf9; }
@@ -309,26 +348,10 @@ body {
 
 .schedule {
   margin-top: 66px;
-  margin-left: 46px; }
+  margin-left: 140px; }
 
 .program {
   text-transform: uppercase;
   font-size: 24px;
-  font-weight: bold; }
-
-.box-container {
-  display: flex;
-  justify-content: center;
-  width: 90%; }
-
-.box {
-  width: 33%; }
-
-.box-1 {
-  background: red; }
-
-.box-2 {
-  background: green; }
-
-.box-3 {
-  background: blue; }
+  font-weight: bold;
+  margin-bottom: 32px; }
