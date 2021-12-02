@@ -108,7 +108,8 @@ body {
   transform: translateY(-50%);
   background: transparent;
   border: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 1; }
 
 .carousel-button img {
   width: 12px; }

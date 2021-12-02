@@ -2,7 +2,7 @@ const cards = document.getElementById("cards");
 const leftBtn = document.getElementById("left");
 const rightBtn = document.getElementById("right");
 
-const card = document.querySelectorAll("#cards card");
+const card = document.querySelectorAll("#cards #card");
 
 console.log(card);
 
