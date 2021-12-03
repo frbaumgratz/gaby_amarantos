@@ -40,3 +40,27 @@
 .cbtnright {
   right: -25px;
 }
+
+// footer buttons
+
+.campanha-btn {
+  border-radius: 0;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 32px;
+  background: $dark-color;
+  color: $tertiary-color;
+  text-transform: uppercase;
+}
+
+.edicoes-btn {
+  border-radius: 0;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  background: $quaternary-color;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  font-weight: bold;
+}

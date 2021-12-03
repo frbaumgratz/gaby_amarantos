@@ -1,3 +1,41 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.main-footer {
+  display: flex;
+}
+
+.footer-campanha {
+  width: 50%;
+  background: $quinary-color;
+  color: $light-color;
+  text-align: center;
+  padding: 24px;
+
+  p {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.footer-edicoes {
+  width: 50%;
+  background: $dark-color;
+  color: $light-color;
+  padding: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  p {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+}
