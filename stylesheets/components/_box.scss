@@ -26,23 +26,22 @@
 .box-baloon {
   background: $dark-color;
   position: relative;
-  width: 250px;
+  width: 300px;
   height: 100px;
   p {
     margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+    padding: 10px 10px 5px;
     color: $light-color;
   }
 
   h1 {
     margin: 0;
-    color: $secondary-color;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 2px;
     padding-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 24px;
   }
 }
 
@@ -59,15 +58,18 @@
 }
 
 .box-body {
-  width: 250px;
+  width: 300px;
 }
 
 .box-title {
-  margin-top: 45px;
+  margin-top: 52px;
+  font-size: 18px;
 }
 
 .box-subtitle {
+  font-size: 18px;
 }
 
 .box-description {
+  font-size: 16px;
 }

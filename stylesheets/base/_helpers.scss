@@ -7,7 +7,7 @@
  */
 .clearfix::after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -52,4 +52,18 @@
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+// Utilities
+
+.pink {
+  color: $secondary-color;
+}
+
+.green {
+  color: $quaternary-color;
+}
+
+.yellow {
+  color: $tertiary-color;
 }
