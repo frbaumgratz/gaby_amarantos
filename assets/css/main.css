@@ -106,20 +106,17 @@ body {
 .header-logo {
   background-color: #302e31;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px; }
   .header-logo .dialogos {
     align-self: center; }
 
 .header-content {
-  display: flex; }
-
-.header-content--left {
-  margin-right: 20px;
-  width: 300px; }
-
-.header-content--right {
-  display: flex;
-  flex-direction: column; }
+  position: relative;
+  display: grid;
+  grid-template-areas: "preta data" "preta orgulho";
+  grid-template-rows: 1fr 1fr; }
 
 .header-content .preta {
   text-transform: uppercase;
@@ -127,23 +124,32 @@ body {
   color: #fdf8e5;
   margin-left: 20px;
   font-size: 24px;
-  width: 100%;
-  background-color: darkred; }
+  grid-area: preta; }
 
 .header-content .msgbox {
-  align-self: flex-start;
-  margin-right: auto;
-  background-color: blueviolet; }
+  position: absolute;
+  top: 0;
+  left: 20%; }
 
 .header-content .data {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
-  background-color: darkgoldenrod; }
+  grid-area: data;
+  text-align: center;
+  align-self: flex-end;
+  margin: 0; }
 
 .header-content .orgulho {
   font-size: 14px;
-  background-color: darkgreen; }
+  grid-area: orgulho;
+  margin: 0;
+  text-align: center; }
+  .header-content .orgulho span {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin: 0; }
 
 .main-footer {
   display: flex; }
@@ -384,12 +390,15 @@ body {
   width: 100%; }
 
 .showcase p {
-  font-weight: bold;
   text-align: center;
   margin: 0;
-  padding: 16px; }
-  .showcase p a {
-    color: #302e31; }
+  padding: 20px;
+  font-size: 18px; }
+
+.canalgnt {
+  text-decoration: none;
+  font-weight: bold;
+  color: #302e31; }
 
 .section2 {
   position: relative; }
