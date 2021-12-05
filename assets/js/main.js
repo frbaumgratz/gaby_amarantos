@@ -24,7 +24,7 @@ function changeCard() {
     idx = card.length - 1;
   }
 
-  cards.style.transform = `translateX(${-idx * 250}px)`;
+  cards.style.transform = `translateX(${-idx * 260}px)`;
 }
 
 // Reset interval é só se você quiser usar o carousel automático. Ele vai mudar automático, daí quando você clicar, o tempo da mudança automática reseta!

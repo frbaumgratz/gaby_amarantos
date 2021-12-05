@@ -196,10 +196,11 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: transparent;
+  background: rgba(237, 237, 237, 0.5);
   border: 0;
   cursor: pointer;
-  z-index: 1; }
+  z-index: 1;
+  padding: 16px 8px; }
 
 .carousel-button img {
   width: 12px; }
@@ -408,15 +409,15 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  line-height: 1; }
+  line-height: 0.9; }
 
 .carousel-container {
   position: absolute;
-  top: 8%; }
+  top: 6%; }
 
 .carousel {
   position: relative;
-  width: 90%;
+  width: 93%;
   margin: 0 auto; }
 
 .schedule {

@@ -23,10 +23,11 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: transparent;
+  background: rgba(237, 237, 237, 0.5);
   border: 0;
   cursor: pointer;
   z-index: 1;
+  padding: 16px 8px;
 }
 
 .carousel-button img {
