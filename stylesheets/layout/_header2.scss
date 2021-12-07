@@ -1,0 +1,92 @@
+.main-header {
+	display: flex;
+}
+
+.header-logo {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	background-color: #302e31;
+	max-width: 327px;
+	width: 100%;
+}
+
+.dialogos {
+	margin: 0 auto;
+	display: block;
+}
+
+.header-content {
+	width: 100%;
+	max-width: 1113px;
+	display: flex;
+}
+
+.bloco-esq {
+	padding-left: 36px;
+	padding-right: 36px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	max-width: 304px;
+
+	.preta {
+		margin: 0;
+		font-family: Founders Grotesk Text;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 100%;
+		/* or 36px */
+
+		text-transform: uppercase;
+
+		/* FDF8E5 */
+
+		color: #fdf8e5;
+	}
+}
+
+.bloco-dir {
+	position: relative;
+	padding-left: 134px;
+	padding-right: 126px;
+	padding-top: 36px;
+	padding-bottom: 24px;
+	text-align: right;
+	// font-family: Founders Grotesk Text;
+	font-style: normal;
+
+	color: #302e31;
+
+	.data {
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 100%;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	.orgulho {
+		font-weight: 300;
+		font-size: 19px;
+		line-height: 100%;
+		margin: 0;
+		margin-top: 12px;
+	}
+
+	.conversa {
+		font-weight: bold;
+		font-size: 19px;
+		line-height: 100%;
+		margin: 0;
+		margin-top: 6px;
+	}
+}
+
+.msgbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+}

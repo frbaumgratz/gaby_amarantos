@@ -23,10 +23,24 @@ body {
  * Basic styles for links
  */
 @font-face {
-  font-family: "founders_grotesk_text";
-  src: url("/assets/fonts/FoundersGroteskRegular.woff2") format("woff2"), url("/assets/fonts/FoundersGroteskRegular.woff") format("woff");
+  font-family: 'founders_grotesk_text';
+  src: url("../fonts/FoundersGroteskRegular.woff2") format("woff2"), url("../fonts/FoundersGroteskRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'founders_grotesk_text';
+  src: url(":/fonts/FoundersGroteskText-Light.woff2") format("woff2"), url("../fonts/FoundersGroteskText-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'founders_grotesk_text';
+  src: url("../fonts/FoundersGroteskText-Bold.woff2") format("woff2"), url("../fonts/FoundersGroteskText-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
 
 /**
  * Basic typography style for copy text
@@ -100,56 +114,77 @@ body {
   color: #f1cd00; }
 
 .main-header {
-  display: grid;
-  grid-template-columns: 1fr 3fr; }
+  display: flex; }
 
 .header-logo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: #302e31;
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 20px; }
-  .header-logo .dialogos {
-    align-self: center; }
+  max-width: 327px;
+  width: 100%; }
+
+.dialogos {
+  margin: 0 auto;
+  display: block; }
 
 .header-content {
+  width: 100%;
+  max-width: 1113px;
+  display: flex; }
+
+.bloco-esq {
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  max-width: 304px; }
+  .bloco-esq .preta {
+    margin: 0;
+    font-family: Founders Grotesk Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+    /* or 36px */
+    text-transform: uppercase;
+    /* FDF8E5 */
+    color: #fdf8e5; }
+
+.bloco-dir {
   position: relative;
-  display: grid;
-  grid-template-areas: "preta data" "preta orgulho";
-  grid-template-rows: 1fr 1fr; }
+  padding-left: 134px;
+  padding-right: 126px;
+  padding-top: 36px;
+  padding-bottom: 24px;
+  text-align: right;
+  font-style: normal;
+  color: #302e31; }
+  .bloco-dir .data {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0; }
+  .bloco-dir .orgulho {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 100%;
+    margin: 0;
+    margin-top: 12px; }
+  .bloco-dir .conversa {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 100%;
+    margin: 0;
+    margin-top: 6px; }
 
-.header-content .preta {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fdf8e5;
-  margin-left: 20px;
-  font-size: 24px;
-  grid-area: preta; }
-
-.header-content .msgbox {
+.msgbox {
   position: absolute;
   top: 0;
-  left: 20%; }
-
-.header-content .data {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 24px;
-  grid-area: data;
-  text-align: center;
-  align-self: flex-end;
-  margin: 0; }
-
-.header-content .orgulho {
-  font-size: 14px;
-  grid-area: orgulho;
-  margin: 0;
-  text-align: center; }
-  .header-content .orgulho span {
-    text-align: center;
-    font-weight: bold;
-    display: block;
-    margin: 0; }
+  left: 0; }
 
 .main-footer {
   display: flex; }
