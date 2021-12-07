@@ -5,63 +5,70 @@
 // Section 1 - Header + showcase
 
 .section1 {
-  //   height: 50vh;
-  background-color: #66acf9;
+	//   height: 50vh;
+	background-color: #66acf9;
 }
 
 // SHOWCASE
 
 .showcase img {
-  width: 100%;
+	width: 100%;
 }
 
 .showcase p {
-  text-align: center;
-  margin: 0;
-  padding: 20px;
-  font-size: 18px;
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+	font-size: 18px;
 }
 
 .canalgnt {
-  text-decoration: none;
-  font-weight: bold;
-  color: $dark-color;
+	text-decoration: none;
+	font-weight: bold;
+	color: $dark-color;
 }
 
 //2ª sessão, coisa de preta + carousel + boxes
 
 .section2 {
-  position: relative;
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
 }
 
 .coisadepreta {
-  font-size: 120px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  line-height: 0.9;
+	font-size: 120px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	line-height: 0.9;
 }
 
 .carousel-container {
-  position: absolute;
-  top: 6%;
+	position: absolute;
+	top: 6%;
 }
 // O carousel-container foi feito pra colocar o carousel por cima do "coisa de preta". Ele tá ali só pra levar as cards pro topo
 
 .carousel {
-  position: relative;
-  width: 93%;
-  margin: 0 auto;
+	position: relative;
+	width: 93%;
+	margin: 0 auto;
 }
 
 .schedule {
-  margin-top: 66px;
-  margin-left: 140px;
+	margin-top: 66px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 1166px;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .program {
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 32px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 32px;
 }
