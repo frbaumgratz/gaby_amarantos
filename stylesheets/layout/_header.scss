@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 
-.header-logo {
+.main-header__logo-container {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -15,18 +15,18 @@
   width: 100%;
 }
 
-.dialogos {
+.main-header__logo-img {
   margin: 0 auto;
   display: block;
 }
 
-.header-content {
+.main-header__content {
   width: 100%;
   max-width: 1113px;
   display: flex;
 }
 
-.bloco-esq {
+.main-header__content-left {
   padding-left: 36px;
   padding-right: 36px;
   padding-top: 30px;
@@ -34,23 +34,18 @@
   width: 100%;
   max-width: 304px;
 
-  .preta {
+  .main-header__title {
     margin: 0;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 100%;
-    /* or 36px */
-
+    line-height: 36px;
     text-transform: uppercase;
-
-    /* FDF8E5 */
-
     color: #fdf8e5;
   }
 }
 
-.bloco-dir {
+.main-header__content-right {
   position: relative;
   padding-left: 134px;
   padding-right: 126px;
@@ -58,10 +53,15 @@
   padding-bottom: 24px;
   text-align: right;
   font-style: normal;
-
   color: #302e31;
 
-  .data {
+  .main-header__msg-balloon {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .main-header__date {
     font-weight: bold;
     font-size: 36px;
     line-height: 100%;
@@ -69,7 +69,7 @@
     margin: 0;
   }
 
-  .orgulho {
+  .main-header__description {
     font-weight: 300;
     font-size: 19px;
     line-height: 100%;
@@ -77,17 +77,8 @@
     margin-top: 12px;
   }
 
-  .conversa {
+  .main-header__description--cta {
     font-weight: bold;
-    font-size: 19px;
-    line-height: 100%;
-    margin: 0;
     margin-top: 6px;
   }
-}
-
-.msgbox {
-  position: absolute;
-  top: 0;
-  left: 0;
 }

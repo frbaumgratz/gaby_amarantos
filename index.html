@@ -21,63 +21,89 @@
     <!-- <link rel="shortcut icon" type="image/ico" href="assets/imgs/favicon.ico" /> -->
   </head>
   <body>
+    <!-- SEÇÃO 1 - HEADER + SHOWCASE -->
     <section class="section1">
       <!-- HEADER -->
       <header class="main-header">
-        <div class="header-logo">
-          <img class="dialogos" src="/assets/imgs/dialogos_gnt.png" alt="gnt" />
+        <div class="main-header__logo-container">
+          <img
+            class="main-header__logo-img"
+            src="/assets/imgs/dialogos_gnt.png"
+            alt="gnt"
+          />
         </div>
-        <div class="header-content">
-          <div class="bloco-esq">
-            <h1 class="preta">
-              isso <br class="preta--br1" />é coisa <br class="preta--br2" />de
-              preta
+        <div class="main-header__content">
+          <div class="main-header__content-left">
+            <h1 class="main-header__title">
+              isso <br />é coisa <br />de preta
             </h1>
           </div>
 
-          <div class="bloco-dir">
-            <img class="msgbox" src="/assets/imgs/msgbox.png" alt="msgbox" />
-            <p class="data">quinta, 11/11 às 18h</p>
-            <p class="orgulho">
+          <div class="main-header__content-right">
+            <img
+              class="main-header__msg-balloon"
+              src="/assets/imgs/msgbox.png"
+              alt="msgbox"
+            />
+            <p class="main-header__date">quinta, 11/11 às 18h</p>
+            <p class="main-header__description">
               Um dia de orgulho, aprendizado, representatividade e potência.<br />
             </p>
-            <p class="conversa">Vem pra conversar com a gente!</p>
+            <p class="main-header__description main-header__description--cta">
+              Vem pra conversar com a gente!
+            </p>
           </div>
         </div>
       </header>
       <!-- /HEADER -->
 
+      <!-- SHOWCASE -->
       <div class="showcase">
-        <img src="assets/imgs/showcase_bg.jpg" alt="gaby" />
-        <p>
+        <img
+          class="showcase__bg"
+          src="assets/imgs/showcase_bg.jpg"
+          alt="gaby"
+        />
+        <p class="showcase__paragraph">
           AO VIVO EM <br />
           <a
-            class="canalgnt"
+            class="showcase__link"
             href="http://www.youtube.com/canalgnt"
             target="blank"
             >YOUTUBE.COM/CANALGNT</a
           >
         </p>
       </div>
+      <!-- /SHOWCASE -->
     </section>
+    <!-- /SEÇÃO 1 -->
 
+    <!-- SEÇÃO 2 - CARROSSEL + PROGRAMAÇÃO -->
     <section class="section2">
-      <div class="coisadepretabg">
+      <div class="carousel-bg">
         <img src="assets/imgs/coisadepreta_bg.jpg" alt="coisadepretabg" />
       </div>
 
-      <button class="carousel-button cbtnleft" id="left">
-        <img src="/assets/imgs/arrow_left.svg" alt="left arrow" />
+      <button class="carousel__button carousel__button--left" id="left">
+        <img
+          class="carousel__button-img"
+          src="/assets/imgs/arrow_left.svg"
+          alt="left arrow"
+        />
       </button>
-      <button class="carousel-button cbtnright" id="right">
-        <img src="/assets/imgs/arrow_right.svg" alt="right arrow" />
+      <button class="carousel__button carousel__button--right" id="right">
+        <img
+          class="carousel__button-img"
+          src="/assets/imgs/arrow_right.svg"
+          alt="right arrow"
+        />
       </button>
 
-      <!-- carousel -->
-      <div class="carousel-container">
+      <!-- CARROSSEL -->
+      <div class="carousel__container">
         <div class="carousel">
           <div class="card-container" id="cards">
-            <!-- cards -->
+            <!-- CARDS -->
             <div class="card" id="card">
               <div class="card-photo">
                 <img
@@ -292,9 +318,9 @@
           </div>
         </div>
       </div>
-      <!-- final do carousel -->
+      <!-- /CARROSSEL -->
 
-      <!-- Programação -->
+      <!-- PROGRAMAÇÃO -->
       <div class="schedule">
         <p class="program">programação</p>
         <div class="boxes-container">
@@ -360,19 +386,32 @@
           </div>
         </div>
       </div>
+      <!-- /PROGRAMAÇÃO -->
     </section>
+    <!-- /SEÇÃO 2 -->
 
+    <!-- FOOTER -->
     <footer class="main-footer">
-      <div class="footer-campanha">
-        <p>assista aO VÍDEO MANIFESTO DA CAMPANHA</p>
-        <h1>isso é coisa de preta</h1>
-        <p>QUE FOI INSPIRAÇÃO PARA O EVENTO</p>
-        <a href="#" class="btn campanha-btn">Clique Aqui</a>
+      <div class="main-footer__content main-footer__content--left">
+        <p class="main-footer__paragraphs">
+          assista aO VÍDEO MANIFESTO DA CAMPANHA
+        </p>
+        <h1 class="main-footer__title">isso é coisa de preta</h1>
+        <p class="main-footer__paragraphs">QUE FOI INSPIRAÇÃO PARA O EVENTO</p>
+        <a href="#" class="main-footer__btn main-footer__btn--btn-left"
+          >Clique Aqui</a
+        >
       </div>
-      <div class="footer-edicoes">
-        <p>Confira as edições anteriores</p>
-        <a href="#" class="btn edicoes-btn">Parada do Orgulho</a>
-        <a href="#" class="btn edicoes-btn">Mulheres do Presente</a>
+      <div class="main-footer__content main-footer__content--right">
+        <p class="main-footer__paragraphs main-footer__paragraphs--right-cta">
+          Confira as edições anteriores
+        </p>
+        <a href="#" class="main-footer__btn main-footer__btn--btn-right"
+          >Parada do Orgulho</a
+        >
+        <a href="#" class="main-footer__btn main-footer__btn--btn-right"
+          >Mulheres do Presente</a
+        >
       </div>
     </footer>
 

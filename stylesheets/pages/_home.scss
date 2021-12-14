@@ -2,33 +2,32 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-// Section 1 - Header + showcase
+// SEÇÃO 1 - HEADER + SHOWCASE
 
 .section1 {
-  //   height: 50vh;
   background-color: #66acf9;
 }
 
 // SHOWCASE
 
-.showcase img {
+.showcase__bg {
   width: 100%;
 }
 
-.showcase p {
+.showcase__paragraph {
   text-align: center;
   margin: 0;
   padding: 20px;
   font-size: 18px;
 }
 
-.canalgnt {
+.showcase__link {
   text-decoration: none;
   font-weight: bold;
   color: $dark-color;
 }
 
-//2ª sessão, coisa de preta + carousel + boxes
+// SEÇÃO 2 - CARROSSEL + PROGRAMAÇÃO
 
 .section2 {
   position: relative;
@@ -36,11 +35,11 @@
   max-width: 100%;
 }
 
-.carousel-container {
+.carousel__container {
   position: absolute;
   top: 6%;
 }
-// O carousel-container foi feito pra colocar o carousel por cima do "coisa de preta". Ele tá ali só pra levar as cards pro topo
+// O carousel-container foi feito pra colocar o carousel por cima do background - coisa de preta -. Ele está ali só pra levar as cards pro topo
 
 .carousel {
   position: relative;

@@ -6,36 +6,36 @@
   display: flex;
 }
 
-.footer-campanha {
+.main-footer__content {
   width: 50%;
-  background: $quinary-color;
   color: $light-color;
   text-align: center;
   padding: 24px;
-
-  p {
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 15px;
-  }
-
-  h1 {
-    text-transform: uppercase;
-    margin: 0;
-  }
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
-.footer-edicoes {
-  width: 50%;
-  background: $dark-color;
-  color: $light-color;
-  padding: 24px;
-  text-align: center;
-  text-transform: uppercase;
+.main-footer__content--left {
+  background: $quinary-color;
+}
 
-  p {
-    margin-top: 8px;
-    margin-bottom: 12px;
-    font-size: 15px;
-  }
+.main-footer__content--right {
+  background: $dark-color;
+}
+
+.main-footer__title {
+  margin: 0;
+  font-size: 36px;
+  font-family: $ff-regular;
+}
+
+.main-footer__paragraphs {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.main-footer__paragraphs--right-cta {
+  margin-top: 8px;
+  margin-bottom: 12px;
 }

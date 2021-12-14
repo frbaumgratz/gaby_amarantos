@@ -45,8 +45,7 @@ body {
 /**
  * Basic typography style for copy text
  */
-body {
-  color: #302e31;
+body * {
   font-family: Founders Grotesk Text; }
 
 /**
@@ -119,7 +118,7 @@ body {
   max-width: 1440px;
   margin: 0 auto; }
 
-.header-logo {
+.main-header__logo-container {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -128,34 +127,32 @@ body {
   max-width: 327px;
   width: 100%; }
 
-.dialogos {
+.main-header__logo-img {
   margin: 0 auto;
   display: block; }
 
-.header-content {
+.main-header__content {
   width: 100%;
   max-width: 1113px;
   display: flex; }
 
-.bloco-esq {
+.main-header__content-left {
   padding-left: 36px;
   padding-right: 36px;
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
   max-width: 304px; }
-  .bloco-esq .preta {
+  .main-header__content-left .main-header__title {
     margin: 0;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 100%;
-    /* or 36px */
+    line-height: 36px;
     text-transform: uppercase;
-    /* FDF8E5 */
     color: #fdf8e5; }
 
-.bloco-dir {
+.main-header__content-right {
   position: relative;
   padding-left: 134px;
   padding-right: 126px;
@@ -164,58 +161,56 @@ body {
   text-align: right;
   font-style: normal;
   color: #302e31; }
-  .bloco-dir .data {
+  .main-header__content-right .main-header__msg-balloon {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .main-header__content-right .main-header__date {
     font-weight: bold;
     font-size: 36px;
     line-height: 100%;
     text-transform: uppercase;
     margin: 0; }
-  .bloco-dir .orgulho {
+  .main-header__content-right .main-header__description {
     font-weight: 300;
     font-size: 19px;
     line-height: 100%;
     margin: 0;
     margin-top: 12px; }
-  .bloco-dir .conversa {
+  .main-header__content-right .main-header__description--cta {
     font-weight: bold;
-    font-size: 19px;
-    line-height: 100%;
-    margin: 0;
     margin-top: 6px; }
-
-.msgbox {
-  position: absolute;
-  top: 0;
-  left: 0; }
 
 .main-footer {
   display: flex; }
 
-.footer-campanha {
+.main-footer__content {
   width: 50%;
-  background: #94693c;
   color: #fdf8e5;
   text-align: center;
-  padding: 24px; }
-  .footer-campanha p {
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 15px; }
-  .footer-campanha h1 {
-    text-transform: uppercase;
-    margin: 0; }
-
-.footer-edicoes {
-  width: 50%;
-  background: #302e31;
-  color: #fdf8e5;
   padding: 24px;
-  text-align: center;
-  text-transform: uppercase; }
-  .footer-edicoes p {
-    margin-top: 8px;
-    margin-bottom: 12px;
-    font-size: 15px; }
+  text-transform: uppercase;
+  font-size: 15px; }
+
+.main-footer__content--left {
+  background: #94693c; }
+
+.main-footer__content--right {
+  background: #302e31; }
+
+.main-footer__title {
+  margin: 0;
+  font-size: 36px;
+  font-family: Founders Grotesk Text; }
+
+.main-footer__paragraphs {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300; }
+
+.main-footer__paragraphs--right-cta {
+  margin-top: 8px;
+  margin-bottom: 12px; }
 
 .btn {
   border: none;
@@ -229,7 +224,7 @@ body {
 .btn:hover {
   text-decoration: none; }
 
-.carousel-button {
+.carousel__button {
   position: absolute;
   top: 20%;
   background: rgba(237, 237, 237, 0.5);
@@ -238,33 +233,35 @@ body {
   z-index: 1;
   padding: 16px 8px; }
 
-.carousel-button img {
+.carousel__button-img {
   width: 12px; }
 
-.cbtnleft {
+.carousel__button--left {
   left: 6%; }
 
-.cbtnright {
+.carousel__button--right {
   right: 3%; }
 
-.campanha-btn {
+.main-footer__btn {
+  border: none;
   border-radius: 0;
-  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block; }
+
+.main-footer__btn--btn-left {
   margin-top: 15px;
   padding: 8px 32px;
   background: #302e31;
-  color: #f1cd00;
-  text-transform: uppercase; }
+  color: #f1cd00; }
 
-.edicoes-btn {
-  border-radius: 0;
-  display: inline-block;
+.main-footer__btn--btn-right {
   margin-top: 5px;
-  padding: 8px 16px;
   margin-right: 8px;
+  padding: 8px 16px;
   background: #4e9961;
   color: #f4f4f4;
-  text-transform: uppercase;
   font-weight: bold; }
 
 .card-container {
@@ -427,16 +424,16 @@ body {
 .section1 {
   background-color: #66acf9; }
 
-.showcase img {
+.showcase__bg {
   width: 100%; }
 
-.showcase p {
+.showcase__paragraph {
   text-align: center;
   margin: 0;
   padding: 20px;
   font-size: 18px; }
 
-.canalgnt {
+.showcase__link {
   text-decoration: none;
   font-weight: bold;
   color: #302e31; }
@@ -446,7 +443,7 @@ body {
   overflow: hidden;
   max-width: 100%; }
 
-.carousel-container {
+.carousel__container {
   position: absolute;
   top: 6%; }
 
