@@ -3,65 +3,64 @@
 // -----------------------------------------------------------------------------
 
 .btn {
-	border: none;
-	text-decoration: none;
-	cursor: pointer;
-	padding: 10px 20px;
-	border-radius: 5px;
-	background: $primary-color;
-	color: $secondary-color;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: $primary-color;
+  color: $secondary-color;
 }
 
 .btn:hover {
-	// color: $dark-color;
-	text-decoration: none;
+  // color: $dark-color;
+  text-decoration: none;
 }
 
 // Carousel Button
 
 .carousel-button {
-	position: absolute;
-	top: 20%;
-	transform: translateY(-50%);
-	background: rgba(237, 237, 237, 0.5);
-	border: 0;
-	cursor: pointer;
-	z-index: 1;
-	padding: 16px 8px;
+  position: absolute;
+  top: 20%;
+  background: rgba(237, 237, 237, 0.5);
+  border: 0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 16px 8px;
 }
 
 .carousel-button img {
-	width: 12px;
+  width: 12px;
 }
 
 .cbtnleft {
-	left: 7%;
+  left: 6%;
 }
 
 .cbtnright {
-	right: 7%;
+  right: 3%;
 }
 
 // footer buttons
 
 .campanha-btn {
-	border-radius: 0;
-	display: inline-block;
-	margin-top: 15px;
-	padding: 8px 32px;
-	background: $dark-color;
-	color: $tertiary-color;
-	text-transform: uppercase;
+  border-radius: 0;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 32px;
+  background: $dark-color;
+  color: $tertiary-color;
+  text-transform: uppercase;
 }
 
 .edicoes-btn {
-	border-radius: 0;
-	display: inline-block;
-	margin-top: 5px;
-	padding: 8px 16px;
-	margin-right: 8px;
-	background: $quaternary-color;
-	color: #f4f4f4;
-	text-transform: uppercase;
-	font-weight: bold;
+  border-radius: 0;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  background: $quaternary-color;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  font-weight: bold;
 }

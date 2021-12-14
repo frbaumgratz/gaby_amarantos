@@ -32,5 +32,20 @@ bg_img
 a imagem da gaby entra no html, numa div centralizada na pagina.
 
 
-
+<div class="header-content">
+   <div class="header-content--left">
+   <h1 class="preta">
+      isso <br class="preta--br1" />é coisa <br class="preta--br2" />de
+      preta
+   </h1>
+   </div>
+   <div class="header-content--right">
+   <img class="msgbox" src="/assets/imgs/msgbox.png" alt="msgbox" />
+   <p class="data">quinta, 11/11 às 18h</p>
+   <p class="orgulho">
+      Um dia de orgulho, aprendizado, representatividade e potência.<br />
+      <span>Vem pra conversar com a gente!</span>
+   </p>
+   </div>
+</div>
 

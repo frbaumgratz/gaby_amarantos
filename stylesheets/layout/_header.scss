@@ -1,77 +1,93 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
-
 .main-header {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header-logo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: #302e31;
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  max-width: 327px;
+  width: 100%;
+}
 
-  .dialogos {
-    align-self: center;
-  }
+.dialogos {
+  margin: 0 auto;
+  display: block;
 }
 
 .header-content {
-  position: relative;
-  // display: flex;
-  // align-items: center;
-  display: grid;
-  grid-template-areas:
-    "preta data"
-    "preta orgulho";
-  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  max-width: 1113px;
+  display: flex;
 }
 
-// .header-content--left {
-//   margin-right: 20px;
-//   width: 300px;
-// }
+.bloco-esq {
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  max-width: 304px;
 
-// .header-content--right {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-.header-content .preta {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: $light-color;
-  margin-left: 20px;
-  font-size: 24px;
-  grid-area: preta;
-}
-.header-content .msgbox {
-  position: absolute;
-  top: 0;
-  left: 20%;
-}
-.header-content .data {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 24px;
-  grid-area: data;
-  text-align: center;
-  align-self: flex-end;
-  margin: 0;
-}
-.header-content .orgulho {
-  font-size: 14px;
-  grid-area: orgulho;
-  margin: 0;
-  text-align: center;
-
-  span {
-    text-align: center;
+  .preta {
+    margin: 0;
+    font-style: normal;
     font-weight: bold;
-    display: block;
+    font-size: 36px;
+    line-height: 100%;
+    /* or 36px */
+
+    text-transform: uppercase;
+
+    /* FDF8E5 */
+
+    color: #fdf8e5;
+  }
+}
+
+.bloco-dir {
+  position: relative;
+  padding-left: 134px;
+  padding-right: 126px;
+  padding-top: 36px;
+  padding-bottom: 24px;
+  text-align: right;
+  font-style: normal;
+
+  color: #302e31;
+
+  .data {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+    text-transform: uppercase;
     margin: 0;
   }
+
+  .orgulho {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 100%;
+    margin: 0;
+    margin-top: 12px;
+  }
+
+  .conversa {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 100%;
+    margin: 0;
+    margin-top: 6px;
+  }
+}
+
+.msgbox {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
