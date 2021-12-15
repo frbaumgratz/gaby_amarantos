@@ -1,4 +1,4 @@
-.card-container {
+.card__container {
   display: flex;
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
@@ -31,26 +31,26 @@
   transform: scale(1.05);
 }
 
-.card-photo {
+.card__head {
   margin: 1rem;
 }
 
-.photo {
+.card__photo {
   width: 100%;
 }
 
-.card-body {
+.card__body {
   margin: 1rem 1rem 1rem 1rem;
 }
 
-.card-title {
+.card__title {
   font-size: 19px;
   line-height: 1.5rem;
   margin-bottom: 0;
   font-weight: bold;
 }
 
-.card-subtitle {
+.card__subtitle {
   font-size: 14px;
   font-weight: 500;
   color: $tertiary-color;
@@ -58,24 +58,24 @@
   margin-bottom: 0;
 }
 
-.card-description {
+.card__description {
   color: $dark-color;
   font-size: 16px;
   text-align: justify;
   height: 164px;
 }
 
-.description-gaby {
+.card__description--gaby {
   height: 150px;
 }
 
-.card-button {
+.card__button {
   background: transparent;
   padding: 0;
   color: $tertiary-color;
 }
 
-.card-button:hover {
+.card__button:hover {
   color: $tertiary-hover;
 }
 
@@ -108,10 +108,10 @@
   border-left-color: $quaternary-color;
 }
 
-.card-button--green {
+.card__button--green {
   color: $quaternary-color;
 }
 
-.card-button--green:hover {
+.card__button--green:hover {
   color: $quaternary-hover;
 }
