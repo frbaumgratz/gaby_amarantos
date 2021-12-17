@@ -4,7 +4,8 @@
 }
 
 .box {
-  width: 300px;
+  max-width: 325px;
+  width: 100%;
   margin-right: 35px;
   margin-bottom: 100px;
 }
@@ -27,8 +28,9 @@
 .box__baloon {
   background: $dark-color;
   position: relative;
-  width: 300px;
-  height: 100px;
+  max-width: 325px;
+  width: 100%;
+  min-height: 110px;
   p {
     margin: 0;
     padding: 10px 10px 5px;
@@ -69,12 +71,14 @@
 }
 
 .box__body {
-  width: 300px;
+  max-width: 325px;
+  width: 100%;
 }
 
 .box__subtitle1 {
   margin-top: 52px;
   font-size: 18px;
+  line-height: 24px;
 }
 
 .box__subtitle2 {
@@ -83,4 +87,32 @@
 
 .box__description {
   font-size: 16px;
+  line-height: 22px;
+}
+
+@media (max-width: 600px) {
+  .box__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    margin-bottom: 48px;
+    margin-right: 0px;
+  }
+
+  .box__baloon {
+    max-width: 250px;
+  }
+
+  .box__baloon--mobile {
+    min-height: 90px;
+  }
+
+  .box__body {
+    max-width: 250px;
+  }
+
+  .box__subtitle1 {
+    line-height: 22px;
+  }
 }

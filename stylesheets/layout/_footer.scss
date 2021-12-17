@@ -39,3 +39,26 @@
   margin-top: 8px;
   margin-bottom: 12px;
 }
+
+@media (max-width: 600px) {
+  .main-footer__content {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .main-footer__title {
+    font-size: 18px;
+    margin: 6px 0px;
+    line-height: 100%;
+  }
+
+  .main-footer__paragraphs {
+    font-size: 11px;
+    margin: 4px 0px;
+  }
+
+  .main-footer__paragraphs--right-cta {
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+}

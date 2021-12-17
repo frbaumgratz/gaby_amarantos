@@ -41,6 +41,20 @@
   right: 3%;
 }
 
+@media (max-width: 600px) {
+  .carousel__button {
+    top: 15%;
+  }
+
+  .carousel__button--left {
+    left: 2%;
+  }
+
+  .carousel__button--right {
+    right: 6%;
+  }
+}
+
 // footer buttons
 
 .main-footer__btn {
@@ -66,4 +80,26 @@
   background: $quaternary-color;
   color: #f4f4f4;
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .main-footer__btn {
+    font-size: 12px;
+  }
+
+  .main-footer__btn--btn-left {
+    margin-top: 4px;
+    padding: 8px 28px;
+  }
+
+  .main-footer__btn--btn-right {
+    margin-top: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 4px 8px;
+  }
+
+  .main-footer__btn--btn-mobile {
+    margin-top: 12px;
+  }
 }
