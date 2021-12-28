@@ -425,7 +425,7 @@ body * {
 .card__description {
   color: #302e31;
   font-size: 16px;
-  text-align: justify;
+  text-align: left;
   height: 164px; }
 
 @media (max-width: 600px) {

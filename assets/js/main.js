@@ -29,6 +29,27 @@ function changeCard() {
   cards.style.transform = `translateX(${-idx * 290}px)`;
 }
 
+// função para carrossel responsivo >>> revisar depois
+// const width  = window.innerWidth || document.documentElement.clientWidth ||
+// document.body.clientWidth;
+// const height = window.innerHeight|| document.documentElement.clientHeight||
+// document.body.clientHeight;
+
+// console.log(width, height);
+
+// // adiciona um observador
+// window.addEventListener('resize', function(event) {
+//   ...
+// }, true);
+
+// function() {
+//   let cardNumber = 4
+//   if (width > 1000 && width <= 1440) {
+//       cardNumber = 5
+//   }
+//   card - cardNumber
+// }
+
 // Reset interval é só se você quiser usar o carousel automático. Ele vai mudar automático, daí quando você clicar, o tempo da mudança automática reseta!
 // function resetInterval() {
 //   clearInterval(interval);
